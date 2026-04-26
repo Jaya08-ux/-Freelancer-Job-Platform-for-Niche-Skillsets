@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Jobs | SkillNiche</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: "class" };</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-page="jobs">
+    <header id="navbar"></header>
+    <main class="page-shell mx-auto py-8">
+      <section class="glass-panel rounded-[32px] p-6 sm:p-8">
+        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">Specialized hiring board</p>
+            <h1 class="display-font text-4xl font-bold">Browse niche freelance jobs</h1>
+          </div>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <input id="searchInput" class="rounded-2xl border border-black/10 bg-white/70 px-4 py-3 outline-none dark:border-white/10 dark:bg-slate-900/50" placeholder="Search titles, skills, or problems" />
+            <select id="categoryFilter" class="rounded-2xl border border-black/10 bg-white/70 px-4 py-3 outline-none dark:border-white/10 dark:bg-slate-900/50"></select>
+          </div>
+        </div>
+      </section>
+
+      <section id="jobsGrid" class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3"></section>
+    </main>
+    <div id="toast" class="hidden"></div>
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/jobs.js"></script>
+  </body>
+</html>

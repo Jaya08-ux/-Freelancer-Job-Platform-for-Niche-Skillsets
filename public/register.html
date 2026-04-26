@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | SkillNiche</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: "class" };</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header id="navbar"></header>
+    <main class="page-shell mx-auto flex min-h-[80vh] items-center justify-center py-10">
+      <section class="form-card w-full max-w-2xl rounded-[32px] p-8">
+        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">Create your account</p>
+        <h1 class="display-font text-4xl font-bold">Join the niche talent marketplace</h1>
+        <form id="registerForm" class="mt-8 grid gap-4 md:grid-cols-2">
+          <input name="name" required class="rounded-2xl border border-black/10 bg-white/70 px-4 py-3 outline-none dark:border-white/10 dark:bg-slate-900/50" placeholder="Full name" />
+          <input name="email" type="email" required class="rounded-2xl border border-black/10 bg-white/70 px-4 py-3 outline-none dark:border-white/10 dark:bg-slate-900/50" placeholder="Email address" />
+          <select id="role" name="role" required class="rounded-2xl border border-black/10 bg-white/70 px-4 py-3 outline-none dark:border-white/10 dark:bg-slate-900/50">
+            <option value="freelancer">Freelancer</option>
+            <option value="client">Client</option>
+          </select>
+          <input name="password" type="password" required class="rounded-2xl border border-black/10 bg-white/70 px-4 py-3 outline-none dark:border-white/10 dark:bg-slate-900/50" placeholder="Password" />
+          <input id="companyField" name="companyName" class="hidden rounded-2xl border border-black/10 bg-white/70 px-4 py-3 outline-none dark:border-white/10 dark:bg-slate-900/50 md:col-span-2" placeholder="Company name (for client accounts)" />
+          <button class="rounded-2xl bg-slate-900 px-4 py-3 font-semibold text-white md:col-span-2">Create account</button>
+        </form>
+        <p class="mt-5 text-sm text-slate-500">Already registered? <a href="/login.html" class="font-semibold text-emerald-700">Sign in</a></p>
+      </section>
+    </main>
+    <div id="toast" class="hidden"></div>
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/auth.js"></script>
+  </body>
+</html>

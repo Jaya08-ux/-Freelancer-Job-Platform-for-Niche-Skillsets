@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillNiche | Specialized Freelancer Marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class"
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-page="home">
+    <header id="navbar" class="sticky top-0 z-40 bg-transparent"></header>
+
+    <main class="page-shell mx-auto pb-14 pt-8">
+      <section class="glass-panel overflow-hidden rounded-[36px] px-6 py-8 sm:px-8 sm:py-10 lg:px-12">
+        <div class="hero-grid grid gap-8">
+          <div class="animated-entry">
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">Freelancing for advanced specialists</p>
+            <h1 class="display-font section-title max-w-xl text-5xl font-bold leading-tight sm:text-6xl">
+              Find clients who actually need your hard-to-hire expertise.
+            </h1>
+            <p class="mt-5 max-w-xl text-base leading-7 text-slate-600 dark:text-slate-300">
+              SkillNiche matches niche freelancers in AI, security, blockchain, micro-interactions, DevOps, and technical communication with clients who care about precision.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="/jobs.html" class="rounded-full bg-slate-900 px-6 py-3 font-semibold text-white">Browse opportunities</a>
+              <a href="/register.html" class="rounded-full border border-black/10 px-6 py-3 font-semibold dark:border-white/10">Create account</a>
+            </div>
+          </div>
+
+          <div class="animated-entry">
+            <div class="grid gap-4">
+              <article class="dashboard-card rounded-3xl p-5">
+                <div class="flex items-center justify-between">
+                  <p class="text-sm text-slate-500">Live hiring signal</p>
+                  <span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-900">New</span>
+                </div>
+                <h2 class="display-font mt-4 text-2xl font-bold">Prompt Engineer for healthcare AI copilots</h2>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="niche-chip rounded-full px-3 py-1 text-xs">AI/ML</span>
+                  <span class="niche-chip rounded-full px-3 py-1 text-xs">HIPAA</span>
+                  <span class="niche-chip rounded-full px-3 py-1 text-xs">Prompt testing</span>
+                </div>
+                <div class="mt-6 flex items-center justify-between text-sm">
+                  <span class="font-semibold">$3,200 fixed</span>
+                  <span class="text-slate-500">posted today</span>
+                </div>
+              </article>
+              <article class="dashboard-card rounded-3xl p-5">
+                <p class="text-sm text-slate-500">Why clients use SkillNiche</p>
+                <ul class="mt-4 space-y-3 text-sm text-slate-600 dark:text-slate-300">
+                  <li>Role-specific categories instead of generic gig buckets</li>
+                  <li>Proposal workflows built around specialist screening</li>
+                  <li>Profiles designed to show depth, not fluff</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-8">
+        <div class="mb-5 flex items-center justify-between">
+          <h2 class="display-font text-3xl font-bold">Niche categories</h2>
+          <a href="/jobs.html" class="text-sm font-semibold text-emerald-700">See all jobs</a>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <article class="job-card animated-entry rounded-3xl p-6">
+            <p class="text-sm text-slate-500">AI/ML</p>
+            <h3 class="display-font mt-3 text-2xl font-bold">Prompt Engineering & Model Ops</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-300">Evaluation design, agent workflows, fine-tuning support, and human-in-the-loop systems.</p>
+          </article>
+          <article class="job-card animated-entry rounded-3xl p-6">
+            <p class="text-sm text-slate-500">Cybersecurity</p>
+            <h3 class="display-font mt-3 text-2xl font-bold">Security Audits & Threat Validation</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-300">Pentesting reports, incident simulations, AppSec reviews, and cloud hardening guidance.</p>
+          </article>
+          <article class="job-card animated-entry rounded-3xl p-6">
+            <p class="text-sm text-slate-500">UI/UX Micro Design</p>
+            <h3 class="display-font mt-3 text-2xl font-bold">Interaction Craft for Product Teams</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-300">Micro-interactions, responsive states, motion systems, and interface polish for high-touch products.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mt-8 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+        <article class="glass-panel rounded-[32px] p-8">
+          <h2 class="display-font text-3xl font-bold">Built for serious matching</h2>
+          <p class="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">
+            Freelancers can showcase skill tags, portfolio links, experience level, rates, and ratings. Clients can post specialized work, review applicants, accept bids, and manage hires in one workflow.
+          </p>
+        </article>
+        <article class="glass-panel rounded-[32px] p-8">
+          <div class="grid gap-4 sm:grid-cols-3">
+            <div>
+              <p class="text-sm text-slate-500">Step 1</p>
+              <p class="mt-2 font-semibold">Create a role-based account</p>
+            </div>
+            <div>
+              <p class="text-sm text-slate-500">Step 2</p>
+              <p class="mt-2 font-semibold">Publish or apply to niche work</p>
+            </div>
+            <div>
+              <p class="text-sm text-slate-500">Step 3</p>
+              <p class="mt-2 font-semibold">Hire, chat, and rate outcomes</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div id="toast" class="hidden"></div>
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
